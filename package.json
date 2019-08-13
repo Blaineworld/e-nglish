@@ -1,0 +1,32 @@
+{
+	"name": "e-nglish-interpreter",
+	"version": "0.0.0",
+	"description": "The e-nglish interpreter for Node.JS! Hopefully I will be able to make it available in browsers down the line.",
+	"main": "index.js",
+	"directories": {
+		"example": "example"
+	},
+	"dependencies": {
+		"deasync": "^0.1.15",
+		"readline": "^1.3.0"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"test": "echo \"What's supposed to go here?\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Blaineworld/e-nglish.git"
+	},
+	"keywords": [
+		"e-nglish",
+		"programming",
+		"language"
+	],
+	"author": "Blaineworld",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Blaineworld/e-nglish/issues"
+	},
+	"homepage": "https://github.com/Blaineworld/e-nglish#readme"
+}

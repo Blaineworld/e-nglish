@@ -1,0 +1,7 @@
+; This is a Hello World program that also asks the user for their name, then displays it.
+; My apologies to Bo and @, whose names are just a little too short.
+
+#include console
+
+print "Hello world!\nAnd hello... what's your name?"
+print "And hello, " + a line of input at least 3 characters long + "!"

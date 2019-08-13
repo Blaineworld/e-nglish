@@ -1,1 +1,0 @@
-E.run("print \"Hello world!\"");

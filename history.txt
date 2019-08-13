@@ -1,0 +1,15 @@
+= Types of Bullets =
+@ Announcement
+- Removal
++ Addition
+* Change
+/ Bug Fix
+? Planned or Possible Feature, Considering
+
+= August 13th, 2019 =
+- Removed all the previous files. I've decided to focus on creating
+  an interpreter than runs in Node.JS rather than in a browser.
++ Added a README.md file so Github would stop bugging me about it.
++ Added basically everything that was in the repository at this time.
++ Added this file. (Hi!)
+? Working on adding a Notepad++ UDL for e-nglish!
