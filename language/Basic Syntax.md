@@ -16,6 +16,6 @@ Whitespace is used to separate words, just as in normal writing. Groups of more 
 ### Sentences
 A sentence is a collection of words occupying a single line. It can contain other syntactic structures, literals, or anything that fits in the sentence. The words and syntactic structures that are acceptable at any given point in the sentence is determined by like, a... a tree... thingy? I don't know, here's a visual representation.
 
-![o poop the image didnt load][syntax-tree-visual.gif]
+![o poop the image didnt load][./syntax-tree-visual.gif]
 
 It's a pretty bad visual representation, right?

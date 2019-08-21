@@ -6,8 +6,9 @@
 / Bug Fix
 ? Planned or Possible Feature, Considering
 
-= August 21st, 2019 =
+= August 17st, 2019 =
 * It's now called Engle instead of e-nglish.
+* The headings in README.md are no longer stupid.
 + Added a bunch of stuff, mostly documentation. I'm
   creating the docs before any way of running it so the
   language can be user-friendly and well planned.

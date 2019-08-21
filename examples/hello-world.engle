@@ -1,9 +1,6 @@
-; This is a Hello World program that also asks the user for their name, then displays it.
-; My apologies to Bo and @, whose names are just a little too short.
+; This is a hello world program that asks the user for their name and prints it.
 
 #include console
 
-+aa
-
-print "Hello world!\nAnd hello... what's your name?"
-print "And hello, " + a line of input at least 3 characters long + "!"
+print "Hello world!\n\nHey, what's your name?"
+print "\nAnd hello, " + a line of input at least 3 characters long + "!"
