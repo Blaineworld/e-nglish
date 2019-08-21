@@ -6,6 +6,12 @@
 / Bug Fix
 ? Planned or Possible Feature, Considering
 
+= August 21st, 2019 =
+* It's now called Engle instead of e-nglish.
++ Added a bunch of stuff, mostly documentation. I'm
+  creating the docs before any way of running it so the
+  language can be user-friendly and well planned.
+
 = August 13th, 2019 =
 - Removed all the previous files. I've decided to focus on creating
   an interpreter than runs in Node.JS rather than in a browser.

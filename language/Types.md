@@ -1,5 +1,5 @@
-# types in e-nglish
-There are many types in e-nglish, but I can't write introductory paragraphs, so here's a document all about the types included in the default module.
+# types in Engle
+There are many types in Engle, but I can't write introductory paragraphs, so here's a document all about the types included in the default module.
 
 ## Data Types
 

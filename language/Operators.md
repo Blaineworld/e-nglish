@@ -1,4 +1,4 @@
-# operators in e-nglish
+# operators in Engle
 ## Unary Operations
 A unary operation is an operation with only one operand.
 

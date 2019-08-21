@@ -2,13 +2,13 @@
 
 const deasync = require("deasync");
 
-// You guys know regular expressions are obhects, right?
-const ;
+// You guys know regular expressions are objects, right?
+const leadingWhitespace = /^[ |\t]+/g, trailingWhiteSpace = /[ \t]+$/g, anyLineBreaks = /\n/g, lineBreakClusters = /\n+/g, leadingLineBreaks = /^\n+/g, trailingLineBreaks = /\n+$/g;
 
 {
 	// I really wanted custom function names.
 	const x = {
-		"e-nglish": function(code, namespace) {
+		"engle": function(code, namespace) {
 			// Interpret some code or import a module synchronously.
 			let error;
 			module.exports.interpret(code)
@@ -48,7 +48,7 @@ const ;
 	};
 
 	// I can't have you breaking anything!
-	Object.defineProperties(module.exports = x["e-nglish"], {
+	Object.defineProperties(module.exports = x["engle"], {
 		"interpret": {
 			"value": x["asynchronous interpreter"]
 		}
@@ -56,7 +56,7 @@ const ;
 }
 
 if (!module.parent) {
-	process.title = "e-nglish interpreter"; // 3XTR4 5W4G
+	process.title = "engle interpreter"; // 3XTR4 5W4G
 
 	if (process.argv.length >= 3) {
 		const fs = require("fs"), filename = process.argv[process.argv.length - 3];

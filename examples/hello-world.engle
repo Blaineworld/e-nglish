@@ -3,5 +3,7 @@
 
 #include console
 
++aa
+
 print "Hello world!\nAnd hello... what's your name?"
 print "And hello, " + a line of input at least 3 characters long + "!"

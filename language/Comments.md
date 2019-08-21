@@ -1,5 +1,5 @@
-# comments in e-nglish
-To add comments to a program in e-nglish, type a semicolon (;), and everything after it on the same line will be part of the comment:
+# comments in Engle
+To add comments to a program in Engle, type a semicolon (;), and everything after it on the same line will be part of the comment:
 
 ```
 #include console ; Printy print print.

@@ -1,5 +1,5 @@
 # built-in module: console
-In e-nglish, the `console` module is used to add console functionality to your programs.
+In engle, the `console` module is used to add console functionality to your programs.
 
 ## Grammar
 ### Condition
