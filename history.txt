@@ -6,7 +6,12 @@
 / Bug Fix
 ? Planned or Possible Feature, Considering
 
-= August 17st, 2019 =
+= RD 1 =
+* I'm now making compilers instead of an interpreter first.
+  The language in its current state cannot work well as an
+  interpreted language as compared to a compiled one.
+
+= August 17th, 2019 =
 * It's now called Engle instead of e-nglish.
 * The headings in README.md are no longer stupid.
 + Added a bunch of stuff, mostly documentation. I'm

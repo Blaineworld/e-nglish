@@ -1,18 +1,18 @@
-; Fizzbuzz is actually an incredibly simple program to write in Engle,
-; much simpler than I expected. I mean, of course, since I'm still
-; defining the syntax of the language and all I can bascially add
-; whatever syntax I want, but these are features I was already adding anyway. ;
+;-
+	Fizzbuzz is actually an incredibly simple program to write in Engle,
+	much simpler than I expected. I mean, of course, since I'm still
+	defining the syntax of the language and all I can bascially add
+	whatever syntax I want, but these are features I was already adding anyway.
+-;
 
-#include console
-
-#define byte iteration 1
+create a byte called iteration
 
 repeat [
-	#define string output
+	create a string called output
 
 	if not iteration % 3 then append "Fizz" to output
 	if not iteration % 5 then append "Buzz" to output
 
-	if output then print output
-	otherwise print iteration
-] until not ++iteration
+	if output then log output
+	otherwise log iteration
+] while ++iteration

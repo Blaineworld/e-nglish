@@ -1,6 +1,6 @@
 ; This is a hello world program that asks the user for their name and prints it.
 
-#include console
+#include terminal
 
 print "Hello world!\n\nHey, what's your name?"
 print "\nAnd hello, " + a line of input at least 3 characters long + "!"
