@@ -1,4 +1,4 @@
-# char
+# unsigned char
 *An unsigned 8-bit integer representing an ASCII/ANSI character.*
 
 ## Code Example
@@ -11,7 +11,7 @@
 	255
 -;
 
-create a char called myChar
+create an unsigned char called myChar
 set myChar to 'E'
 
 log myChar

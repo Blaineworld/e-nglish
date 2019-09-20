@@ -11,10 +11,8 @@ function crash(message = "UNSPECIFIED FATAL ERROR") {
 /*
 	Engle by Blaineworld
 
-	Compiler to Python
+	  Python  Compiler
 */
-
-console.log("This compiler uses semicolons to end statements;\nif you have a problem with that, deal with it.\n\nPython is significantly faster with semicolons\nwhether you like it or not.\n");
 
 const fs = require("fs");
 
@@ -22,6 +20,8 @@ if (process.argv.length < 3 || process.argv.length > 4)
 	crash("Usage: ... <source> [<destination>]");
 
 let sourceFile = process.argv[2];
+
+console.log("This compiler uses semicolons to end statements;\nif you have a problem with that, deal with it.\nPython is significantly faster with semicolons\nwhether you like it or not.\n");
 
 console.log("Looking for the source file . . .");
 if (!fs.existsSync(sourceFile))
@@ -40,9 +40,9 @@ let destinationFile = process.argv[2] + ".py";
 if (process.argv.length > 3)
 	destinationFile = process.argv[3];
 
-console.log("Compiling . . .");
+console.log("Processing hash statements . . .");
 
-let result = "print(\"Sorry, the compiler isn't in a usable state yet.\");";
+console.log("Compiling . . .");
 
 console.log("Writing the Python output file . . .");
 fs.writeFileSync(destinationFile, result);

@@ -2,7 +2,7 @@
 ###### A programming language for people who don't want to learn how to code.
 ---
 ## Pronunciation
-I still don't really know how it's going to be pronounced, even after renaming it! :(
+Like a combination of "angle" and "Ennard"; "Engle".
 
 ## Language
 Although you won't the find the name of [the language](./language), which is [Engle](./language), [there](./language), for [info](./language) about [the language](./language), check out the [language folder](./language). [It](./language) contains [documentation](./language) on [the Engle language](./language). Is [that](./language) enough [links](https://www.youtube.com/watch?v=dQw4w9WgXcQ) to [it](./language) for you?!
