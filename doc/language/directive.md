@@ -7,7 +7,7 @@ Directives not understood by the compiler will be ignored, but are stored in the
 
 A directive must be a single line beginning with a `#`, with no text other than whitespace behind it. The text after the `#` symbol on that line is the directive. Comments aren't a thing for directives.
 
-![Fig. 1 - Two directives and a sentence containing '#'.](./fig/directive-1.png)
+![Fig. 1 - Two directives and a sentence containing '#'.](./fig/directive-1.gif)
 
 ## Directives
 
@@ -55,4 +55,4 @@ This example is only meant to show that white space doesn't matter; actually wri
 ---
 
 #### `#silent`
-Kind-of disables the “`log <data>`” sentence structure, so that any operations performed by `<data>` are still performed, but the resulting value isn't logged.
+Kind-of-disables the “`log <data>`” sentence structure, so that any operations performed by `<data>` are still performed, but the resulting value isn't logged.
