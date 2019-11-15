@@ -1,0 +1,6 @@
+// Hey, I've seen this one! It's a classic!
+
+#include terminal
+
+print "What's your name?"
+print "\nHello, " + a line of input at least 3 characters long + "!"

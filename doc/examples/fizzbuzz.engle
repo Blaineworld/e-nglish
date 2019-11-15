@@ -1,9 +1,9 @@
-;-
+/*
 	Fizzbuzz is actually an incredibly simple program to write in Engle,
 	much simpler than I expected. I mean, of course, since I'm still
 	defining the syntax of the language and all I can bascially add
 	whatever I want, but these were already planned features!
--;
+*/
 
 let: byte iteration = 0
 
