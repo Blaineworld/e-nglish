@@ -1,0 +1,16 @@
+/*
+	There are, as with any other language,
+	many other ways of writing it, but this is one.
+*/
+
+let: uint16 index = 0
+
+while ++iteration, do [
+	let: string output = ""
+
+	if not iteration % 3 then append "fizz" to output
+	if not iteration % 5 then append "buzz" to output
+
+	if output then log output in title case
+	otherwise log iteration
+]

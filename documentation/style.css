@@ -1,0 +1,70 @@
+:root {
+	--primary-background-color: peachpuff;
+	--primary-print-color: #000102;
+	--primary-font-family: serif;
+	--primary-font-size: calc(9pt + (1vmin + 1vmax) / 2);
+	--heading-font-family: sans-serif;
+}
+
+body {
+	background-color: var(--primary-background-color);
+	color: var(--primary-print-color);
+
+	font-family: var(--primary-font-family);
+	font-size: var(--primary-font-size);
+	font-variant-numeric: tabular-nums slashed-zero;
+}
+
+figure {
+	background-color: #f8f8f8;
+	border: 1pt solid black;
+	border-radius: 2pt;
+	padding: 0.5ch 0.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--heading-font-family);
+}
+
+hr {
+	border-style: solid;
+	border-radius: 5138008px; /* hee hee */
+}
+
+table {
+	background-color: #f8f8f8;
+	border: 1.25pt solid;
+	border-collapse: collapse;
+}
+
+td, th {
+	border: 0.5pt solid;
+}
+
+thead {
+	background-color: navy;
+	color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--primary-background-color: black;
+		--primary-print-color: moccasin;
+	}
+
+	figure, table {
+		background-color: #181818;
+	}
+}
+
+@media print {
+	:root {
+		--primary-background-color: white;
+		--primary-print-color: black;
+		--primary-font-size: 12pt;
+	}
+
+	figure, table {
+		background-color: white;
+	}
+}

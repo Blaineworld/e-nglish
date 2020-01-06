@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Engle - Inline Text Operations</title>
+		<link rel="stylesheet" href="../../style.css" />
+	</head>
+	<body>
+		<h1>Engle Docs: Inline Text Operations</h1>
+		<p>
+			This file documents Engle's default inline operations for
+			text values, meaning combinations of words that can be used
+			within an expression to manipulate text.
+		</p>
+		<h2>Changing Case</h2>
+		<dl>
+			<dt><code>&lt;text&gt; in alternating case</code></dt>
+			<dd>
+				changes letters to alternating case wherever possible.
+				<br />
+				<code>soME TExt.more Text</code>
+				&rarr;
+				<code>sOmE TeXt.mOrE TeXt</code>
+			</dd>
+			<dt><code>&lt;text&gt; in inverse case</code></dt>
+			<dd>
+				changes letters to inverse case wherever possible.
+				<br />
+				<code>soME TExt.more Text</code>
+				&rarr;
+				<code>SOme teXT.MORE tEXT</code>
+			</dd>
+			<dt><code>&lt;text&gt; in lower case</code></dt>
+			<dd>
+				changes letters to lower case wherever possible.
+				<br />
+				<code>soME TExt.more Text</code>
+				&rarr;
+				<code>some text.more text</code>
+			</dd>
+			<dt><code>&lt;text&gt; in normal case</code></dt>
+			<dd>
+				does not change the case of the letters.
+				<br />
+				<code>soME TExt.more Text</code>
+				&rarr;
+				<code>soME TExt.more Text</code>
+			</dd>
+			<dt><code>&lt;text&gt; in proper case</code></dt>
+			<dd>
+				changes letters to proper case wherever possible.
+				<br />
+				<code>soME TExt.more Text</code>
+				&rarr;
+				<code>Some Text.More Text</code>
+			</dd>
+			<dt><code>&lt;text&gt; in sentence case</code></dt>
+			<dd>
+				changes letters to sentence case wherever possible.
+				<br />
+				<code>soME TExt.more Text</code>
+				&rarr;
+				<code>Some text.More text</code>
+			</dd>
+			<dt><code>&lt;text&gt; in upper case</code></dt>
+			<dd>
+				changes letters to upper case wherever possible.
+				<br />
+				<code>soME TExt.more Text</code>
+				&rarr;
+				<code>SOME TEXT.MORE TEXT</code>
+			</dd>
+		</dl>
+		<h2>Reordering</h2>
+		<dl>
+			<dt><code>&lt;text&gt; backwards</code></dt>
+			<dd>
+				reverses the text.
+				<br />
+				<code>soME TExt.more Text</code>
+				&rarr;
+				<code>txeT erom.txET EMos</code>
+			</dd>
+			<dt><code>&lt;text&gt; forwards</code></dt>
+			<dd>
+				does not reverse the text.
+				<br />
+				<code>soME TExt.more Text</code>
+				&rarr;
+				<code>soME TExt.more Text</code>
+			</dd>
+		</dl>
+	</body>
+</html>

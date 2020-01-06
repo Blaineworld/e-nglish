@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Engle - Bytecode</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h1>Engle Docs: Bytecode</h1>
+		<p>
+			This file documents the format of Engle's bytecode files
+			and the instructions they use. Unlike every actual
+			instruction set ever, Engle bytecode is designed to mimic
+			the structures found in a traditional high-level
+			programming language, but in a more low-level form.
+			(Engle takes a long time to interpret so it runs faster if
+			it's compiled-ish first.) It can also be transcompiled
+			fairly easily, making it convenient as heck.
+		</p>
+		<hr />
+		<h2>Instructions</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Hex Code</th>
+					<th>Description</th>
+					<th colspan="100%">Operands</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>00</td>
+					<td>No Operation</td>
+					<td colspan="100%"></td>
+				</tr>
+				<tr>
+					<td>01</td>
+					<td>Jump By</td>
+					<td colspan="100%">int64: Addresses</td>
+				</tr>
+				<tr>
+					<td>07</td>
+					<td>Begin Block</td>
+					<td colspan="100%">uint8: Layers</td>
+				</tr>
+				<tr>
+					<td>08</td>
+					<td>Terminate</td>
+					<td colspan="100%"></td>
+				</tr>
+				<tr>
+					<td>09</td>
+					<td>Jump To</td>
+					<td colspan="100%">uint64: Address</td>
+				</tr>
+				<tr>
+					<td>0F</td>
+					<td>End Block</td>
+					<td colspan="100%">uint8: Layers</td>
+				</tr>
+				<tr>
+					<td>7F</td>
+					<td>Evaluate</td>
+					<td colspan="100%">expression</td>
+				</tr>
+				<tr>
+					<td>FF</td>
+					<td>Log</td>
+					<td colspan="100%">expression: Message</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

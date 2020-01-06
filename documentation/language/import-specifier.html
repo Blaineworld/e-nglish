@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Engle - Import Specifier</title>
+		<link rel="stylesheet" href="../style.css" />
+	</head>
+	<body>
+		<h1>Engle Docs: Import Specifier</h1>
+		<p>
+			<dfn>Import specifiers</dfn> are Engle's way of specifying
+			modules to import, and are written in
+			<dfn>import notation</dfn>, which accepts
+			<ol>
+				<li>
+					<code>"quoted/file names"</code> with forward
+					slashes (<code>/</code>) as a path separator, even
+					on Windows, for local modules,
+				</li>
+				<li>
+					<code>single_word_names</code> for builtin modules,
+				</li>
+				<li>
+					<code>&lt;names in angle brackets&gt;</code> for
+					installed modules. The advantages of this syntax
+					are that module names can include spaces and can't
+					conflict with builtin ones.
+				</li>
+			</ol>
+			In addition to this, import notation accepts an optional
+			<dfn><a href="./version-selector.html">version
+			selector</a></dfn> the end of a specifier,
+			separated by an at sign (<code>@</code>).
+		</p>
+		<h2>Examples</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Import Specifier</th>
+					<th>Matches</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><code>math</code></td>
+					<td>the builtin <i>math</i> module</td>
+				</tr>
+				<tr>
+					<td><code>&lt;mcpi&gt;</code></td>
+					<td>
+						an installed module called <i>mcpi</i>,
+						presumably for the Minecraft: Pi Edition API
+					</td>
+				</tr>
+				<tr>
+					<td><code>&lt;math&gt;</code></td>
+					<td>
+						an installed module that happens to be called
+						<i>math</i>, rather than the builtin
+						<i>math</i> module
+					</td>
+				</tr>
+				<tr>
+					<td><code>&lt;math&gt;@2.x</code></td>
+					<td>
+						any version of the second major release of an
+						installed module called <i>math</i>
+					</td>
+				</tr>
+				<tr>
+					<td><code>&lt;math&gt;@2.x-3.x</code></td>
+					<td>
+						any version of the second or third major
+						release of an installed module called
+						<i>math</i>, presumably because
+						4.0 broke your project
+					</td>
+				</tr>
+				<tr>
+					<td><code>&lt;math&gt;@3.(2.1)+</code></td>
+					<td>
+						any version of the third major release of an
+						installed module called <i>math</i> after
+						3.2.1, presumably that update fixed a bug that
+						affected your project
+					</td>
+				</tr>
+				<tr>
+					<td><code>"qol.xml"</code></td>
+					<td>
+						presumably project-specific
+						quality-of-life stuff
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

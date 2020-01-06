@@ -1,0 +1,7 @@
+// This is a hello world program that asks the user
+// for their name and then displays it.
+
+#include terminal
+
+print "Hello world!\n\nHey, what's your name?\n(Enter name): "
+print "\nAnd hello, " + a line of input + "!"

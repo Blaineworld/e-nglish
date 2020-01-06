@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Engle - Directive</title>
+		<link rel="stylesheet" href="../style.css" />
+	</head>
+	<body>
+		<h1>Engle Docs: Directive</h1>
+		<p>
+			Engle borrows many ideas from C-related languages,
+			including <dfn>directives</dfn>. Directives are special
+			instructions preceded by an octothorpe (<code>#</code>),
+			processed before anything else. All directives, including
+			unusable ones, are saved in the resulting file's header,
+			for potential use by transcompilers and other programs
+			that might interpret and use them.
+		</p>
+		<p>
+			A directive consists of any single line starting with a
+			&ldquo;<code>#</code>&rdquo; symbol, although there can be
+			any amount of whitespace before the symbol.
+		</p>
+		<figure>
+			<img src="./fig/directive-1.gif" />
+			<figcaption>
+				Fig. 1: Two directives and a sentence containing an octothorpe.
+			</figcaption>
+		</figure>
+		<hr />
+		<h2>Lists of Directives</h2>
+		<h3>Engle Compiler Directives</h3>
+		<p>These are directives used at compile time:</p>
+		<dl>
+			<dt><code>#echo <var>(Message...)</var></code></dt>
+			<dd>
+				displays a compiler message. This functionality can be
+				turned off by the user.
+				<br />
+				<b>Message</b> is a raw message for the compiler log.
+			</dd>
+			<dt><code>#include <var>(Module)</var></code></dt>
+			<dd>
+				includes a builtin, installed, or local module.
+				<br />
+				<b>Module</b> is a module to include, specified in
+				<a href="./import-notation.html">import notation</a>.
+			</dd>
+			<dt><code>#include <var>(Module)</var> as <var>(Name)</var></code></dt>
+			<dd>
+				includes a builtin, installed, or local module,
+				assigning a custom internal name to it.
+				<br />
+				<b>Module</b> is module to include, written as an
+				<a href="./import-notation.html">import specifier</a>.
+				<br />
+				<b>Name</b> is a custom name to reference the module.
+			</dd>
+			<dt><code>#silence</code></dt>
+			<dd>
+				disables debug logging for your whole program by
+				replace the Log instruction with the Evaluate
+				instruction.
+			</dd>
+			<dt><code>#silence <var>(Module)</var></code></dt>
+			<dd>
+				disables debug logging for a single module.
+				<br />
+				<b>Module</b> is a module to mute, specified by name.
+			</dd>
+		</dl>
+	</body>
+</html>
