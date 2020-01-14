@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module name="math" version="wip">
+	<metadata>
+		<author>Blaineworld</author>
+		<description>
+			The built-in "math" module includes specialized mathematical
+			functions and other more advanced math functionality.
+		</description>
+	</metadata>
+</module>
