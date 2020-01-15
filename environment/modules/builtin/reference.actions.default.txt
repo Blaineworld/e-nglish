@@ -1,0 +1,27 @@
+* This file is temporary.
+
+--------------------------------------------------------------------------------
+
+	BREAK
+Exits the current code block. When used outside of a block,
+it behaves similarly to STOP.
+	STOP
+Stops the program from running anymore.
+
+	DO block
+Executes a single code block.
+	DO expression
+Evaluates an expression.
+	LOG expression
+Displays a debug message.
+
+	IF condition, action
+Performs an action if a condition passes.
+	OTHERWISE, action
+Performs an action if a the previous conditional action was not executed.
+	UNLESS condition, action
+Performs an action if a condition fails.
+	UNTIL condition, action
+Performs an action every time a condition fails.
+	WHILE condition, action
+Performs an action every time a condition passes.
