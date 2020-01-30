@@ -1,0 +1,12 @@
+let x be an unsigned int
+
+while ++x, do [
+	let text be a string
+
+	append "fizz" to text if x is a multiple of 3
+	append "buzz" to text if x is a multiple of 5
+
+	log text in title case or x
+]
+
+log "Done!"

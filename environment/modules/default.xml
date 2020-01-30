@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module name="color" version="wip">
+	<metadata>
+		<author>Blaineworld</author>
+		<description>
+			The default module contains Engle's basic feature set,
+			and is normally imported automatically before anything else.
+		</description>
+	</metadata>
+</module>

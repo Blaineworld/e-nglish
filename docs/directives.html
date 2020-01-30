@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Directives</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<h1>Engle: Directives</h1>
+		<p>
+			Engle borrows a lot from C-related languages like C,
+			including <dfn>directives</dfn>. Directives are special
+			commands that are processed separately from the actual
+			program. A directive is written as a single line whose first
+			non-whitespace character is an octothorpe (<code>#</code>).
+			These lines are treated as blank when the program is parsed.
+		</p>
+		<h2>Compiler Directives</h2>
+		<dl>
+			<dt><code>#error &lt;text ...&gt;</code></dt>
+			<dd>
+				where <var>text</var> is a "greedy string"
+				<br />
+				generates a compiler error.
+			</dd>
+			<dt><code>#info &lt;text ...&gt;</code></dt>
+			<dd>
+				where <var>text</var> is a "greedy string"
+				<br />
+				generates a compiler message.
+			</dd>
+			<dt><code>#warn &lt;text ...&gt;</code></dt>
+			<dd>
+				where <var>text</var> is a "greedy string"
+				<br />
+				generates a compiler warning.
+			</dd>
+			<dt><code>#include &lt;module&gt; as &lt;alias&gt;</code></dt>
+			<dd>
+				where <var>module</var> is an import specifier
+				<br />
+				and <var>alias</var> is a valid unused namespace
+				<br />
+				includes a module using an alternate name.
+			</dd>
+			<dt><code>#include &lt;module&gt;</code></dt>
+			<dd>
+				where <var>module</var> is an import specifier
+				<br />
+				includes a module in your program.
+			</dd>
+			<dt><code>#silence</code></dt>
+			<dd>
+				disables debug logging for your program.
+			</dd>
+			<dt><code>#silence &lt;module&gt;</code></dt>
+			<dd>
+				where <var>namespace</var> is a valid namespace
+				<br />
+				disables debug logging for a specific module.
+			</dd>
+		</dl>
+	</body>
+</html>

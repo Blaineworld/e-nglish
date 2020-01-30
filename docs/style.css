@@ -1,0 +1,48 @@
+:root {
+	font-family: FreeMono, Courier, 'Courier New', monospace;
+	line-height: 1em;
+	tab-size: 4;
+}
+
+body {
+	margin: 1ch 1em;
+}
+
+code, pre {
+	font-family: FreeMono, Courier, 'Courier New', monospace;
+}
+
+dl, p, pre {
+	text-align: justify;
+
+	max-width: 72ch;
+}
+
+dl, ol, ul {
+	margin: 1rem 0;
+}
+
+dd {
+	margin-left: 4ch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 2rem;
+
+	margin: 2rem 0 1rem;
+}
+
+p {
+	margin: 1rem 0;
+}
+
+table {
+	border-spacing: 1em 2ch;
+}
+
+@media screen {
+	body {
+		background-color: #C2C1C0;
+		color: #000000;
+	}
+}
