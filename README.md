@@ -11,8 +11,8 @@ this file so I can't just forget to add one.
 ### Primitives
 - `boolean` - stores either `true` or `false`
 - `byte` / `unsigned byte` - an unsigned 8-bit integer
-- `float` - a 32-bit integer
-- `double` - a 64-bit integer
+- `float` - a 32-bit floating-point number
+- `double` - a 64-bit floating-point number
 - `signed byte` - a signed 8-bit integer
 - `int` / `signed int` - a signed 32-bit integer
 - `unsigned int` - an unsigned 32-bit integer
@@ -28,7 +28,7 @@ this file so I can't just forget to add one.
 - `string` - stores a sequence of values, which normally represent text
 - `array` - stores multiple values of a specific type in an imaginary
 one-or-more-dimensional grid
-- `matrix` - essentially the same concept as an array,
+- `matrix` - essentially the same basic idea as an array,
 but it can cover any range of indexes (normally starting at 1) and can
 be rotated in increments of 90 degrees
 - `tuple` - similar to an array, but with multiple types
