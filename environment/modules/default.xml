@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<module name="color" version="wip">
+<?xml-stylesheet type="text/css" href="../module.css"?>
+
+<module namespace="default" version="wip">
 	<metadata>
-		<author>Blaineworld</author>
-		<description>
-			The default module contains Engle's basic feature set,
-			and is normally imported automatically before anything else.
-		</description>
+		<field name="Author">Blaineworld</field>
+		<field name="Description">
+			The default module includes Engle's most basic
+			features and is imported automatically before
+			any other module. The content of this module can
+			be thought of as everything that can be used
+			without including any modules in your program.
+		</field>
 	</metadata>
 </module>

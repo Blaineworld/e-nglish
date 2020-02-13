@@ -1,0 +1,55 @@
+:root {
+	font-family: FreeMono, Courier, 'Courier New', monospace;
+	line-height: 1em;
+
+	margin: 1em auto;
+	max-width: 72ch;
+}
+
+module:root::before {
+	font-weight: bold;
+	white-space: pre;
+
+	display: block;
+	margin: 1em 0;
+}
+
+module:root[namespace]::before, module:root[version]::before {
+	--namespace: "";
+	--version: "";
+
+	content: var(--version) var(--namespace);
+}
+
+module:root[namespace]::before {
+	--namespace: "Namespace: " attr(namespace) "\A";
+}
+
+module:root[version]::before {
+	--version: "Version: " attr(version) "\A";
+}
+
+module:root[version="wip"]::before {
+	--version: "Work in Progress\A";
+}
+
+module:root > metadata {
+	display: block;
+	margin: 1em 0;
+}
+
+module:root > metadata > field {
+	display: block;
+}
+
+module:root > metadata > field::before {
+	content: attr(name) ": ";
+
+	font-weight: bold;
+}
+
+@media screen {
+	:root {
+		background-color: #E0E0E0;
+	}
+}
